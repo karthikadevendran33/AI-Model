@@ -4,6 +4,7 @@ import { SupportedLanguageId, UserProgress } from '../types';
 import { SUPPORTED_LANGUAGES, getLanguageData } from '../data/languages';
 import { sounds, speakWord } from '../utils/audio';
 import { SpeechRecognizer, calculateSimilarity, isSpeechRecognitionSupported } from '../utils/speechRecognition';
+import speechPracticeImg from '../assets/images/lingua_speech_practice_1791194856758.jpg';
 
 interface SpeechRecognitionLabProps {
   progress: UserProgress;
@@ -186,7 +187,7 @@ export const SpeechRecognitionLab: React.FC<SpeechRecognitionLabProps> = ({
 
           <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden shrink-0 border border-indigo-500/30 bg-indigo-950/50 shadow-inner">
             <img
-              src="/src/assets/images/lingua_speech_practice_1791194856758.jpg"
+              src={speechPracticeImg}
               alt="Speech Lab Audio"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

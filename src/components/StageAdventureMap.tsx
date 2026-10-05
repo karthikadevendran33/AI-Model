@@ -3,6 +3,8 @@ import { Trophy, Star, Lock, Play, CheckCircle2, ShieldAlert, Sparkles, Compass 
 import { GameStage, UserProgress } from '../types';
 import { SUPPORTED_LANGUAGES } from '../data/languages';
 import { sounds } from '../utils/audio';
+import heroAdventureImg from '../assets/images/lingua_hero_adventure_1791194821770.jpg';
+import mascotOwlImg from '../assets/images/lingua_mascot_owl_1791194838891.jpg';
 
 interface StageAdventureMapProps {
   stages: GameStage[];
@@ -29,7 +31,7 @@ export const StageAdventureMap: React.FC<StageAdventureMapProps> = ({
       <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-emerald-800 via-teal-900 to-slate-900 text-white shadow-md">
         <div className="absolute inset-0 opacity-30 mix-blend-overlay">
           <img
-            src="/src/assets/images/lingua_hero_adventure_1791194821770.jpg"
+            src={heroAdventureImg}
             alt="Language Quest Adventure Map"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center"
@@ -250,7 +252,7 @@ export const StageAdventureMap: React.FC<StageAdventureMapProps> = ({
         <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-4 shadow-xs">
           <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-emerald-300 bg-white">
             <img
-              src="/src/assets/images/lingua_mascot_owl_1791194838891.jpg"
+              src={mascotOwlImg}
               alt="Professor Hoot"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
